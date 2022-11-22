@@ -5,6 +5,10 @@ class RootController(TGController):
     @expose()
     def index(self):
         return 'Hello Word, by PABW 7B2 Punokawan'
+
+    @expose('hello.xhtml')
+    def hello(self, person=None):
+        return dict(person=person)
     
     @expose('json.xhtml')
     def json(self, person=None):
