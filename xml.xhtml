@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <title>Buka xml</title>
+    
+</head>
+<body>
+    <py:if test="person">
+        <h1>Hello ${person}</h1>
+    </py:if><py:else>
+    <script>
+        var xHttp
+        xHttp = new XMLHttpRequest()
+        xHttp.onreadystatechange=function(){
+            if(this.readyState==4 && this.status==200){
+                pabw(this)
+            }
+        }
+        xHttp.open("GET","http://localhost:8080/Cars.xml",true)
+   </script>
+</body>
+</html>
