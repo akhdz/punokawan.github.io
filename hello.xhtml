@@ -1,0 +1,80 @@
+<html>
+    <title>Hello</title>
+    <py:if test="person">
+        <h1>Hello ${person}</h1>
+    </py:if><py:else>
+        <body>                
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2>
+                            Hello, world!
+                        </h2>
+                        <p>
+                            Perkenalkan kami dari Kelompok Punokawan Kelas PABW 7B2.</p> 
+                            <p>Kami memilih Framework Python TurboGears (10)
+                        </p>
+                        <p>Alamat Repository Kami: https://github.com/akhdz/punokawan.github.io
+                        </p>				
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    No
+                                </th>
+                                <th>
+                                    Nama
+                                </th>
+                                <th>
+                                    NIM
+                                </th>					
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr class="table-active">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Agung Khoirudzikri
+                                </td>
+                                <td>
+                                    191080200254
+                                </td>						
+                            </tr>
+                            <tr class="table-success">
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    Mohammed Hendra Ferdiansyah
+                                </td>
+                                <td>
+                                    191080200262
+                                </td>						
+                            </tr>
+                            <tr class="table-warning">
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                    Luqmanul Hakim Maulana
+                                </td>
+                                <td>
+                                    191080200209
+                                </td>						
+                            </tr>					
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/scripts.js"></script>
+          </body>
+    </py:else>
+</html>
